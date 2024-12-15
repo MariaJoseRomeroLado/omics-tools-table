@@ -1,17 +1,6 @@
 # omics-tools-table
 This repository contains a table that summarizes some of the available tools for analyzing omics data. 
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Genomics Tools Table</title>
-  <!-- DataTables CSS -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.css">
-</head>
-<body>
-  <h1>Interactive Genomics Tools Table</h1>
-  <p>Below is a searchable and sortable table of genomics tools:</p>
-
   <table id="toolsTable" class="display">
     <thead>
       <tr>
@@ -53,18 +42,6 @@ This repository contains a table that summarizes some of the available tools for
       </tr>
     </tbody>
   </table>
-
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- DataTables JS -->
-  <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.js"></script>
-  <script>
-    $(document).ready(function() {
-      $('#toolsTable').DataTable();
-    });
-  </script>
-</body>
-</html>
 
 ### Adding new tools
 To add new tools to the existing table, replace the <tr> blocks inside <tbody> with rows for the new tools. Each row represents one tool.
