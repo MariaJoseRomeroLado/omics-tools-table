@@ -1,0 +1,74 @@
+---
+title: "omics-tools-table"
+author: "María José Romero Lado"
+format: html
+editor: visual
+---
+
+This repository contains a table that summarizes some of the available tools for analyzing omics data. 
+
+```{r setup, include=FALSE}
+# Load required libraries
+library(DT)
+```
+
+```{r, echo=FALSE}
+# Create a data frame for the tools
+genomics_tools <- data.frame(
+  Tool = c("FastQC", "Bowtie", "IGV", "Trimmomatic"),
+  Category = c("Analysis", "Sequencing", "Visualization", "Analysis"),
+  Description = c(
+    "Quality control for sequencing data",
+    "Fast and memory-efficient aligner",
+    "Interactive genome viewer",
+    "Trimming and filtering of reads"
+  ),
+  Link = c(
+    "<a href='https://www.bioinformatics.babraham.ac.uk/projects/fastqc/' target='_blank'>Visit</a>",
+    "<a href='http://bowtie-bio.sourceforge.net/index.shtml' target='_blank'>Visit</a>",
+    "<a href='https://software.broadinstitute.org/software/igv/' target='_blank'>Visit</a>",
+    "<a href='http://www.usadellab.org/cms/?page=trimmomatic' target='_blank'>Visit</a>"
+  ),
+  Comments = c(
+    "Great for identifying issues in raw reads",
+    "Often used in RNA-seq pipelines",
+    "Supports various genome formats",
+    "Handles both single-end and paired-end data"
+  ),
+  stringsAsFactors = FALSE
+)
+
+# Render the table
+datatable(
+  genomics_tools,
+  escape = FALSE, # Allow HTML in the Link column
+  options = list(
+    pageLength = 5,
+    autoWidth = TRUE
+  )
+)
+```
+
+### 🆕 How to Add New Tools to the Table
+
+To add new tools to the table, follow these steps:
+
+1. Open the R Markdown (`.Rmd`) or Quarto (`.qmd`) file in RStudio or a text editor.
+2. Locate the code chunk labeled `tools-table`. It contains the `genomics_tools` data frame that defines the table contents.
+3. Add a new row to the `data.frame` in the following format:
+
+```{r}
+# Example: Adding a new tool
+new_row <- data.frame(
+  Tool = "New Tool Name",
+  Category = "Tool Category (e.g., Sequencing)",
+  Description = "A short description of the tool",
+  Link = "<a href='URL' target='_blank'>Visit</a>",
+  Comments = "Any relevant comments about the tool",
+  stringsAsFactors = FALSE
+)
+
+# Append the new row to the existing table
+genomics_tools <- rbind(genomics_tools, new_row)
+```
+
