@@ -43,17 +43,16 @@ This repository contains a table that summarizes some of the available tools for
     </tbody>
   </table>
 
-## Adding New Tools
+# 🆕 Adding New Tools
 To add new tools to the existing table, replace the <tr> blocks inside <tbody> with rows for the new tools. Each row represents one tool.
 
 _Example:_
 
-html
-Copy code
-<tr>
-  <td>Tool Name</td>
-  <td>Category</td>
-  <td>Short Description</td>
-  <td><a href="URL" target="_blank">Visit</a></td>
-  <td>Comments</td>
-</tr>
+&lt;tr&gt;
+  &lt;td&gt;Tool Name&lt;/td&gt;
+  &lt;td&gt;Category&lt;/td&gt;
+  &lt;td&gt;Short Description&lt;/td&gt;
+  &lt;td&gt;&lt;a href="URL" target="_blank"&gt;Visit&lt;/a&gt;&lt;/td&gt;
+  &lt;td&gt;Comments&lt;/td&gt;
+&lt;/tr&gt;
+
