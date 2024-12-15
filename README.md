@@ -55,6 +55,7 @@ _Example:_
   <td>Short Description</td>
   <td><a href="URL" target="_blank">Visit</a></td>
   <td>Comments</td>
-</tr>```
+</tr>
+```
 
 
