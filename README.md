@@ -49,6 +49,12 @@ To add new tools to the existing table, replace the <tr> blocks inside <tbody> w
 _Example:_
 
 ```html
+<tr>
+  <td>Tool Name</td>
+  <td>Category</td>
+  <td>Short Description</td>
+  <td><a href="URL" target="_blank">Visit</a></td>
+  <td>Comments</td>
+</tr>
 
-<tr> <td>Tool Name</td> <td>Category</td> <td>Short Description</td> <td><a href="URL" target="_blank">Visit</a></td> <td>Comments</td> </tr> \`\`\`
 
