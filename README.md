@@ -43,10 +43,13 @@ This repository contains a table that summarizes some of the available tools for
     </tbody>
   </table>
 
-### Adding new tools
+## Adding New Tools
 To add new tools to the existing table, replace the <tr> blocks inside <tbody> with rows for the new tools. Each row represents one tool.
 
-_Example_
+_Example:_
+
+html
+Copy code
 <tr>
   <td>Tool Name</td>
   <td>Category</td>
